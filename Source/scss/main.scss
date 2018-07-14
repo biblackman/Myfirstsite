@@ -1,0 +1,32 @@
+// This is the single file output by sass. It is intended to ONLY @import other files.
+
+// 1 - TOOLS
+@import '1-tools/normalize'
+
+// 2 - HELPERS
+@import '2-helpers/variables'
+
+// 3 - BASICS
+
+// 4 - LAYOUT
+@import '4-layout/conn'
+@import '4-layout/footer'
+@import '4-layout/header'
+@import '4-layout/nav'
+
+// 5 - MODULES
+
+// 6 - PAGES
+@import '6-pages/signUpInsert'
+@import '6-pages/checkUser'
+@import '6-pages/index'
+@import '6-pages/loading'
+@import '6-pages/login'
+@import '6-pages/page2'
+
+
+// 6 - PAGES
+@import '6-pages/page-home'
+.foo {
+  content: 'bar';
+}
