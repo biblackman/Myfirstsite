@@ -34,7 +34,7 @@ var scriptDest = 'build/assets/js/';
 var fontSrc = '/source/fonts/**/*';
 var fontDect = '/build/assets/fonts/';
 var imgSrc = '/source/img/**/*';
-var fontDect = '/build/assets/img/';
+var imgDect = '/build/assets/img/';
 // --------------------------------------------
 // Stand Alone Tasks
 // --------------------------------------------
