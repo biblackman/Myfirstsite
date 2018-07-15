@@ -9,6 +9,11 @@ var imagemin = require('gulp-imagemin');
 var plumber = require('gulp-plumber');
 var rename = require('gulp-rename');
 var cache = require('gulp-cache');
+var autoprefixer = require('gulp-autoprefixer');
+var del = require('del');
+var compass = require('gulp-compass');
+var minify = require('gulp-minify');
+var express = require('express');
 
 //path
 var styleSrc = 'source/sass/**/*.sass';
