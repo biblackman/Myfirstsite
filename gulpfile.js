@@ -4,23 +4,11 @@ var concat = require('gulp-concat');
 var uglify = require('gulp-uglify');
 var browserSync = require('browser-sync').create();
 var sass = require('gulp-sass');
-// var sass = require('gulp-scss');
-var autoprefixer = require('gulp-autoprefixer');
+var scss = require('gulp-scss');
 var imagemin = require('gulp-imagemin');
-var minifyCSS = require('gulp-minify-css');
-var sourcemaps = require('gulp-sourcemaps');
 var plumber = require('gulp-plumber');
 var rename = require('gulp-rename');
-var mamp = require('gulp-mamp');
-var mysql = require('MySql');
-var express = require('express');
 var cache = require('gulp-cache');
-
-var useref = require('gulp-useref');
-var gulpIf = require('gulp-if');
-
-var cssnano = require('gulp-cssnano');
-var runSequence = require('run-sequence');
 
 //path
 var styleSrc = 'source/sass/**/*.sass';
