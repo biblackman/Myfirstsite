@@ -14,9 +14,11 @@ var del = require('del');
 var compass = require('gulp-compass');
 var minify = require('gulp-minify');
 var express = require('express');
+var minify = require('gulp-minify-css');
+var sourcemaps = require('gulp-sourcemaps');
 
 //path
-var styleSrc = 'source/sass/**/*.sass';
+var styleSrc = 'source/scss/**/*.scss';
 var styleDest = 'build/assets/css/';
 var htmlSrc = 'source/';
 var htmlDest = 'build/';
@@ -32,7 +34,7 @@ var imgDect = '/build/assets/img/';
 // Stand Alone Tasks
 // --------------------------------------------
 
-// Compiles all SASS files
+// Compiles all SCSS files
 gulp.task('scss', function () {
     return gulp.src('source/scss/**/*.scss')
         .pipe(plumber())
