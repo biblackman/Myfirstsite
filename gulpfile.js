@@ -124,6 +124,6 @@ gulp.task('default', [ 'scss', 'scripts', 'vendors', 'watch'], function () {
  console.log('Building files');
 });
 
-//gulp.task('default', function (callback) {runSequence(['sass','browserSync', 'watch'],callback
-  )
-});
+// gulp.task('default', function (callback) {
+//     runSequence(['sass', 'browserSync', 'watch'], callback)
+// });
