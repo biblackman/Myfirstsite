@@ -41,87 +41,87 @@ var fontDect = '/build/assets/img/';
 
 // Compiles all SASS files
 gulp.task('scss', function () {
-          return gulp.src('source/scss/**/*.scss')
+    return gulp.src('source/scss/**/*.scss')
         .pipe(plumber())
         .pipe(scss({
             style: 'compressed',
-          }))
+        }))
         .pipe(rename({
             basename: 'main',
             suffix: '.min',
-          }))
+        }))
 
         .pipe(gulp.dest('build/assets/css'))
         .pipe(browserSync.stream());
-        });
+});
 
 // Optimizing Images 
 gulp.task('images', function () {
-        return gulp.src('source/img/**/*.+(png|jpg|gif|svg)')
+    return gulp.src('source/img/**/*.+(png|jpg|gif|svg)')
         .pipe(cache(imagemin({
-          interlaced: true
+            interlaced: true
         })))
         .pipe(gulp.dest('build/assets/img'))
-      });
+});
 
 // Fonts
-gulp.task('fonts', function() {
-  return gulp.src('source/fonts/**/*')
-  .pipe(gulp.dest('build/assets/fonts'))
+gulp.task('fonts', function () {
+    return gulp.src('source/fonts/**/*')
+        .pipe(gulp.dest('build/assets/fonts'))
 });
 
 // Uglify js files
 gulp.task('scripts', function () {
-        gulp.src('source/js/*.js')
+    gulp.src('source/js/*.js')
         .pipe(plumber())
         .pipe(uglify())
         .pipe(gulp.dest('build/assets/js'))
         .pipe(browserSync.stream());
-      });
+});
 
 //Concat and Compress Vendor .js files
 gulp.task('vendors', function () {
-              gulp.src(
-            [
-                'source/js/vendors/jquery.min.js',
-                'source/js/vendors/*.js',
-            ])
+    gulp.src(
+        [
+            'source/js/vendors/jquery.min.js',
+            'source/js/vendors/*.js',
+        ])
         .pipe(plumber())
         .pipe(concat('vendors.js'))
         .pipe(uglify())
         .pipe(gulp.dest('build/assets/js'));
-            });
+});
 
 // Watch for changes
 gulp.task('watch', function () {
-      //Serve files from the root of this project
-        browserSync.init({
-          server: {
-              baseDir: "./build",
-                },
-          notify: false
-          });
+    //Serve files from the root of this project
+    browserSync.init({
+        server: {
+            baseDir: './build',
+        },
+        notify: false
+    });
 
-      gulp.watch(styleSrc, ['scss']);
-      gulp.watch(scriptSrc, ['scripts']);
-      gulp.watch(vendorSrc, ['vendors']);
-      gulp.watch(['build/*.html', 'build/assets/css/*.css', 'build/assets/js/*.js', 'build/assets/js/vendors/*.js' , '/build/assets/img/*' , '/build/assets/img/'])
-    .on(' change ', browserSync.reload);
+    gulp.watch(styleSrc, ['scss']);
+    gulp.watch(scriptSrc, ['scripts']);
+    gulp.watch(vendorSrc, ['vendors']);
+    gulp.watch(['build/*.html', 'build/assets/css/*.css', 'build/assets/js/*.js', 'build/assets/js/vendors/*.js', '/build/assets/img/*', '/build/assets/img/'])
+        .on(' change ', browserSync.reload);
 
-      });
+});
 
 //use default task to launch Browsersync and watch JS files
-//gulp.task(
-   //'default',
-   //gulp.series(
-    //'clean',
-    //gulp.parallel('scss', 'scripts', 'vendors',`images`,`fonts`, 'watch') , function (){
-      //console.log('Building files');
-    //}));
+// gulp.task(
+//     'default',
+//     gulp.series(
+//         'clean',
+//         gulp.parallel('scss', 'scripts', 'vendors', `images`, `fonts`, 'watch'), function () {
+//             console.log('Building files');
+//         }));
 
 
-gulp.task('default', [ 'scss', 'scripts', 'vendors', 'watch'], function () {
- console.log('Building files');
+gulp.task('default', ['scss', 'scripts', 'vendors', 'watch'], function () {
+    console.log('Building files');
 });
 
 // gulp.task('default', function (callback) {
