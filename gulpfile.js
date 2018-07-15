@@ -3,7 +3,6 @@ var copy = require('gulp-contrib-copy');
 var concat = require('gulp-concat');
 var uglify = require('gulp-uglify');
 var browserSync = require('browser-sync').create();
-var sass = require('gulp-sass');
 var scss = require('gulp-scss');
 var imagemin = require('gulp-imagemin');
 var plumber = require('gulp-plumber');
