@@ -1,79 +1,189 @@
 //color name
 
-$white: #ffffff;
-$sunset orange: #ef5350;
-$gray72: #b8b8b8;
-$dark gray: #a7a7a7;
-$nobel: #9d9d9d;
-$gray: #7e7d7d; /* #888888 */
-$gray35: #595959;
-$gray80: #585558;
-$gray85: #4f4e4e;
-$light green: #4caf50;
-$night rider: #333333;
-$nero: #212121;
-$black: #111111;
-$dodger blue: #0099ff; /* #0682ef */
-$yellow: #ffff00;
-$silver: #c0c0c0;  /* #c5c5c5 */
+$color_fuscous_gray_approx: #4f4e4e;
+$color_royal_purple_approx: rebeccapurple;
+$color_mine_shaft_approx: #333;
+$white: white; /*#ffffff;*/
+$color_woodsmoke_approx: #111;
+$color_apple_approx: #4caf50;
+$color_log_cabin_approx: #212121;
+$color_chicago_approx: #585558;
+$color_carnation_approx: #ef5350;
+$color_pink_swan_approx: #b8b8b8;
+$color_shady_lady_approx: #a7a7a7;
+$color_star_dust_approx: #9d9d9d;
+$color_concord_approx: #7e7d7d;
+$white_75: hsla(0, 0%, 100%, 0.75);
+$color_azure_radiance_approx: #09f;
+$color_mine_shaft_approx: #333;
+$color_ship_gray_approx: #403e45;
+$color_boulder_approx: #76737c;
+$color_abbey_approx: #4e4c52;
+$color_chestnut_rose_approx: #cc6055;
+$black_10: rgba(0,0,0,0.1);
+$black_15: rgba(0,0,0,0.15);
+$color_lemon_chiffon_60_approx: rgba(255,253,197,0.6);
+$black_30: rgba(0,0,0,0.3);
+$color_gallery_approx: #eeeeee;
+$color_jade_approx: #1fb264;
+$color_salem_approx: #15824b;
+$color_eucalyptus_approx: #1aa059;
+$color_log_cabin_approx: #222;
+$color_valencia_approx: #cd4535;
+$color_roof_terracotta_approx: #b02818;
+$color_flush_mahogany_approx: #c13b2a;
 
-$gray90: #e5e5e5;
-$wedgewood: #4e6b80;
-$charcoal: #444444;
-$regal blue: #1a4361;
-$lime: #00ff00;
+$color_mandy_approx: #e85657;
+$color_rum_swizzle_approx: #f9f6e5;
+$black_50: rgba(0,0,0,0.5);
+$color_matterhorn_approx: #553445;
+$color_linen_approx: #fef0e3;
+$color_quarter_spanish_white_approx: #faf1e0;
+$color_calypso_approx: #286f81;
+$color_almond_70_approx: rgba(240,221,204,0.7);
 
-#f1e5e6
-#dfc8ca
-#d3394c
-#b39295
-#999999
-#722040
-#4b0f31
+$color_vanilla_approx: #d5bba4;
+$color_stark_white_approx: #ebd3bd;
+$color_hillary_approx: #b09a86;
+$color_mandy_approx: #e75854;
+$color_rum_swizzle_approx: #f9f6e5;
+$white: #fff;
+$color_rodeo_dust_approx: #ccb096;
+$color_gallery_approx: #f0f0f0;
+$color_mongoose_approx: #ba997b;
+$color_sandal_approx: #a9896d;
+$color_viking_approx: #67c2d4;
+$color_calypso_approx: #286f81;
+$black_40: rgba(0,0,0,0.4);
+$color_silver_chalice_approx: #aaa;
+$color_chestnut_approx: #bb4445;
+$color_quarter_spanish_white_approx: #faf1e0;
+$black_10: rgba(0,0,0,0.1);
+$black_20: rgba(0,0,0,0.2);
+
+$color_quarter_spanish_white_approx: #faf1e0;
+$black_20: rgba(0,0,0,0.2);
 
 
-#f1e5e6
-#dfc8ca
-#d3394c
-#722040
 
-#ff0000
-red
-#fef0e3
-#faf1e0
-#f9f6e5
-#e85657
-#e75854
-#553445
-#286f81
 
-#faf1e0
-#f9f6e5
-#f9e1c9
-#f0f0f0
-#ebd3bd
-#e75854
-#d5bba4
-#ccb096
-#bb4445
-#ba997b
-#b09a86
-#aaaaaa
-#a9896d
-#a50a05
-#67c2d4
-#286f81
-
-#faf1e0
-#e75854
-#67c2d4
-#5f545a
-#553445
-
-#cc6055
-#76737c
-#4e4c52
-#403e45
 
 // fonts//
+$font_0: codropsicons;
+$font_1: camera-icons;
+$font_2: Montserrat;
+$font_3: Helvetica Neue;
+$font_4: Helvetica;
+$font_5: Arial;
+$font_6: sans-serif;
+$font_7: Avenir Next;
+$font_9: FontAwesome;
+$font_10: Raleway;
+$font_11: Merriweather Sans;
 
+
+
+
+
+
+@media screen and (max-height: 35em) {
+	.stack-slider {
+		height: 60vh;
+		-webkit-transform: translate3d(0, 40vh, 0);
+		transform: translate3d(0, 40vh, 0);
+	}
+}
+
+/* Mobile-first media queries */ 
+@media screen and (min-width: 65em) {
+	.item__details {
+		position: absolute;
+		top: 0;
+		margin: 0 0 0 1em;
+		z-index: 1000;
+		left: 100%;
+		width: 40%;
+	}
+}
+
+/* Mobile-specific media queries */ 
+@media screen and (max-width: 65em) {
+	.stack {
+		width: 60%;
+	}
+}
+
+@media screen and (max-width: 45em) {
+	.stack-title {
+		font-size: 1.75em;
+	}
+	.menu__item {
+		display: block;
+		background: #4F4E4E;
+		overflow: hidden;
+		height: 4px;
+		width: 30px;
+		margin: 3px 10px 0 0;
+	}
+	.menu__item span {
+		display: none;
+	}
+	.codrops-header {
+		padding: 0.5em 0;
+	}
+	.stack.stack-prev .stack-title::after, 
+	.stack.stack-next .stack-title::after {
+		top: 1.85em;
+	}
+	.codrops-header h1 {
+		font-size: 0.85em;
+		padding: 0.25em;
+	}
+}
+
+@media screen and(min-width: 65em) {
+	.item__details {
+		position: absolute;
+		top: 0;
+		margin: 0 0 0 1em;
+		z-index: 1000;
+		left: 100%;
+		width: 40%;
+	}
+}
+@media screen and(max-width: 65em) {
+	.stack {
+		width: 60%;
+	}
+}
+@media screen and(max-width: 45em) {
+	.stack-title {
+		font-size: 1.75em;
+	}
+	.menu__item {
+		display: block;
+		background: $color_fuscous_gray_approx;
+		overflow: hidden;
+		height: 4px;
+		width: 30px;
+		margin: 3px 10px 0 0;
+		span {
+			display: none;
+		}
+	}
+	.codrops-header {
+		padding: 0.5em 0;
+		h1 {
+			font-size: 0.85em;
+			padding: 0.25em;
+		}
+	}
+	.stack {
+		&.stack-prev .stack-title::after {
+			top: 1.85em;
+		}
+		&.stack-next .stack-title::after {
+			top: 1.85em;
+		}
+	}
+}

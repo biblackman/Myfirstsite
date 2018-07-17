@@ -1,0 +1,42 @@
+/*
+Error: Invalid CSS after "...$_POST["email"]": expected "{", was ";"
+        on line 22 of /Users/gendyblackman/Sites/blackmanimages/Myfirstsite/source/scss/6-pages/_signUpInsert.scss
+
+17: 
+18: 
+19: 
+20: <?php
+21: // grab the inputs from the last page
+22: $Username_v = $_POST["email"];
+23: $fName_v = $_POST["fName"];
+24: $lName_v = $_POST["lName"];
+25: $Userpass_v = $_POST["pswrd"];
+26: 
+27: 
+
+Backtrace:
+/Users/gendyblackman/Sites/blackmanimages/Myfirstsite/source/scss/6-pages/_signUpInsert.scss:22
+/Users/gendyblackman/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.6/lib/sass/scss/parser.rb:1278:in `expected'
+/Users/gendyblackman/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.6/lib/sass/scss/parser.rb:1208:in `expected'
+/Users/gendyblackman/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.6/lib/sass/scss/parser.rb:1203:in `tok!'
+/Users/gendyblackman/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.6/lib/sass/scss/parser.rb:677:in `block'
+/Users/gendyblackman/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.6/lib/sass/scss/parser.rb:670:in `ruleset'
+/Users/gendyblackman/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.6/lib/sass/scss/parser.rb:696:in `block_child'
+/Users/gendyblackman/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.6/lib/sass/scss/parser.rb:686:in `block_contents'
+/Users/gendyblackman/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.6/lib/sass/scss/parser.rb:137:in `stylesheet'
+/Users/gendyblackman/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.6/lib/sass/scss/parser.rb:41:in `parse'
+/Users/gendyblackman/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.6/lib/sass/engine.rb:414:in `_to_tree'
+/Users/gendyblackman/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.6/lib/sass/engine.rb:389:in `_render_with_sourcemap'
+/Users/gendyblackman/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.6/lib/sass/engine.rb:307:in `render_with_sourcemap'
+/Users/gendyblackman/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.6/lib/sass/exec/sass_scss.rb:391:in `run'
+/Users/gendyblackman/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.6/lib/sass/exec/sass_scss.rb:63:in `process_result'
+/Users/gendyblackman/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.6/lib/sass/exec/base.rb:52:in `parse'
+/Users/gendyblackman/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.6/lib/sass/exec/base.rb:19:in `parse!'
+/Users/gendyblackman/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.6/bin/scss:13:in `<top (required)>'
+/Users/gendyblackman/.rbenv/versions/2.5.1/bin/scss:23:in `load'
+/Users/gendyblackman/.rbenv/versions/2.5.1/bin/scss:23:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid CSS after \"...$_POST[\"email\"]\": expected \"{\", was \";\"\A         on line 22 of /Users/gendyblackman/Sites/blackmanimages/Myfirstsite/source/scss/6-pages/_signUpInsert.scss\A \A 17: \A 18: \A 19: \A 20: <?php\A 21: // grab the inputs from the last page\A 22: $Username_v = $_POST[\"email\"];\A 23: $fName_v = $_POST[\"fName\"];\A 24: $lName_v = $_POST[\"lName\"];\A 25: $Userpass_v = $_POST[\"pswrd\"];\A 26: \A 27: "; }
