@@ -1,17 +1,15 @@
 /*
-Error: Invalid CSS after "...nnect_error());": expected "{", was "}"
-        on line 11 of /Users/gendyblackman/Sites/blackmanimages/Myfirstsite/source/scss/4-layout/_conn.scss
+Error: Invalid CSS after "...ay: -webkit-box": expected "{", was ""
+        on line 32 of /Users/gendyblackman/Sites/blackmanimages/Myfirstsite/source/scss/3-basics/_base.scss
 
-6:    // $conn = mysqli_connect("localhost", "root", "root", "bd_name");
-7:      
-8:     // Check connection
-9:    // if($conn === false){
-10:        // die("ERROR: Could not connect. " . mysqli_connect_error());
-11:     }
-12: ?>
+27:   margin: 0 auto
+28: 
+29: 
+30: section
+31:   display: -webkit-box
 
 Backtrace:
-/Users/gendyblackman/Sites/blackmanimages/Myfirstsite/source/scss/4-layout/_conn.scss:11
+/Users/gendyblackman/Sites/blackmanimages/Myfirstsite/source/scss/3-basics/_base.scss:32
 /Users/gendyblackman/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.6/lib/sass/scss/parser.rb:1278:in `expected'
 /Users/gendyblackman/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.6/lib/sass/scss/parser.rb:1208:in `expected'
 /Users/gendyblackman/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.6/lib/sass/scss/parser.rb:1203:in `tok!'
@@ -35,4 +33,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Invalid CSS after \"...nnect_error());\": expected \"{\", was \"}\"\A         on line 11 of /Users/gendyblackman/Sites/blackmanimages/Myfirstsite/source/scss/4-layout/_conn.scss\A \A 6:    // $conn = mysqli_connect(\"localhost\", \"root\", \"root\", \"bd_name\");\A 7:      \A 8:     // Check connection\A 9:    // if($conn === false){\A 10:        // die(\"ERROR: Could not connect. \" . mysqli_connect_error());\A 11:     }\A 12: ?>"; }
+  content: "Error: Invalid CSS after \"...ay: -webkit-box\": expected \"{\", was \"\"\A         on line 32 of /Users/gendyblackman/Sites/blackmanimages/Myfirstsite/source/scss/3-basics/_base.scss\A \A 27:   margin: 0 auto\A 28: \A 29: \A 30: section\A 31:   display: -webkit-box"; }

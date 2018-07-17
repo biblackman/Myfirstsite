@@ -1,22 +1,25 @@
 /*
-Error: Invalid CSS after "...nnect_error());": expected "{", was "}"
-        on line 11 of /Users/gendyblackman/Sites/blackmanimages/Myfirstsite/source/scss/4-layout/_conn.scss
+Error: Invalid CSS after "@import": expected file to import (string or url()), was ": 'header'; "
+        on line 2 of /Users/gendyblackman/Sites/blackmanimages/Myfirstsite/source/scss/6-pages/index.scss
 
-6:    // $conn = mysqli_connect("localhost", "root", "root", "bd_name");
-7:      
-8:     // Check connection
-9:    // if($conn === false){
-10:        // die("ERROR: Could not connect. " . mysqli_connect_error());
-11:     }
-12: ?>
+1: 
+2: @import: 'header'; 
+3: 
+4: <body>
+5: 	<div class="container">
+6: 		<div class="hero">
+7: 			<div class="hero__back hero__back--static"></div>
 
 Backtrace:
-/Users/gendyblackman/Sites/blackmanimages/Myfirstsite/source/scss/4-layout/_conn.scss:11
+/Users/gendyblackman/Sites/blackmanimages/Myfirstsite/source/scss/6-pages/index.scss:2
 /Users/gendyblackman/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.6/lib/sass/scss/parser.rb:1278:in `expected'
 /Users/gendyblackman/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.6/lib/sass/scss/parser.rb:1208:in `expected'
-/Users/gendyblackman/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.6/lib/sass/scss/parser.rb:1203:in `tok!'
-/Users/gendyblackman/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.6/lib/sass/scss/parser.rb:677:in `block'
-/Users/gendyblackman/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.6/lib/sass/scss/parser.rb:670:in `ruleset'
+/Users/gendyblackman/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.6/lib/sass/scss/parser.rb:1188:in `expr!'
+/Users/gendyblackman/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.6/lib/sass/scss/parser.rb:383:in `block in import_directive'
+/Users/gendyblackman/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.6/lib/sass/scss/parser.rb:382:in `loop'
+/Users/gendyblackman/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.6/lib/sass/scss/parser.rb:382:in `import_directive'
+/Users/gendyblackman/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.6/lib/sass/scss/parser.rb:234:in `special_directive'
+/Users/gendyblackman/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.6/lib/sass/scss/parser.rb:209:in `directive'
 /Users/gendyblackman/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.6/lib/sass/scss/parser.rb:696:in `block_child'
 /Users/gendyblackman/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.6/lib/sass/scss/parser.rb:686:in `block_contents'
 /Users/gendyblackman/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.6/lib/sass/scss/parser.rb:137:in `stylesheet'
@@ -35,4 +38,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Invalid CSS after \"...nnect_error());\": expected \"{\", was \"}\"\A         on line 11 of /Users/gendyblackman/Sites/blackmanimages/Myfirstsite/source/scss/4-layout/_conn.scss\A \A 6:    // $conn = mysqli_connect(\"localhost\", \"root\", \"root\", \"bd_name\");\A 7:      \A 8:     // Check connection\A 9:    // if($conn === false){\A 10:        // die(\"ERROR: Could not connect. \" . mysqli_connect_error());\A 11:     }\A 12: ?>"; }
+  content: "Error: Invalid CSS after \"@import\": expected file to import (string or url()), was \": 'header'; \"\A         on line 2 of /Users/gendyblackman/Sites/blackmanimages/Myfirstsite/source/scss/6-pages/index.scss\A \A 1: \A 2: @import: 'header'; \A 3: \A 4: <body>\A 5: 	<div class=\"container\">\A 6: 		<div class=\"hero\">\A 7: 			<div class=\"hero__back hero__back--static\"></div>"; }

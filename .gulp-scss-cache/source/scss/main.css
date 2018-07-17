@@ -1,21 +1,21 @@
 /*
-Error: Invalid CSS after "//2 - HELPERS": expected selector or at-rule, was "@import '2-help..."
-        on line 7 of /Users/gendyblackman/Sites/blackmanimages/Myfirstsite/source/scss/main.scss
+Error: Invalid CSS after "// 3 - BASICS": expected selector or at-rule, was "@import '3--bas..."
+        on line 10 of /Users/gendyblackman/Sites/blackmanimages/Myfirstsite/source/scss/main.scss
 
-2: 
-3: // 1 - TOOLS
-4: @import '1-tools/normalize'
 5: 
 6: //2 - HELPERS
-7: @import '2-helpers/variables'
+7: //@import '2-helpers/variables'
 8: 
 9: // 3 - BASICS
-10: 
-11: // 4 - LAYOUT
-12: @import '4-layout/conn'
+10: @import '3--basics/base'
+11: 
+12: // 4 - LAYOUT
+13: @import '4-layout/conn'
+14: @import '4-layout/footer'
+15: @import '4-layout/header'
 
 Backtrace:
-/Users/gendyblackman/Sites/blackmanimages/Myfirstsite/source/scss/main.scss:7
+/Users/gendyblackman/Sites/blackmanimages/Myfirstsite/source/scss/main.scss:10
 /Users/gendyblackman/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.6/lib/sass/scss/parser.rb:1278:in `expected'
 /Users/gendyblackman/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.6/lib/sass/scss/parser.rb:1208:in `expected'
 /Users/gendyblackman/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.6/lib/sass/scss/parser.rb:42:in `parse'
@@ -33,4 +33,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Invalid CSS after \"//2 - HELPERS\": expected selector or at-rule, was \"@import '2-help...\"\A         on line 7 of /Users/gendyblackman/Sites/blackmanimages/Myfirstsite/source/scss/main.scss\A \A 2: \A 3: // 1 - TOOLS\A 4: @import '1-tools/normalize'\A 5: \A 6: //2 - HELPERS\A 7: @import '2-helpers/variables'\A 8: \A 9: // 3 - BASICS\A 10: \A 11: // 4 - LAYOUT\A 12: @import '4-layout/conn'"; }
+  content: "Error: Invalid CSS after \"// 3 - BASICS\": expected selector or at-rule, was \"@import '3--bas...\"\A         on line 10 of /Users/gendyblackman/Sites/blackmanimages/Myfirstsite/source/scss/main.scss\A \A 5: \A 6: //2 - HELPERS\A 7: //@import '2-helpers/variables'\A 8: \A 9: // 3 - BASICS\A 10: @import '3--basics/base'\A 11: \A 12: // 4 - LAYOUT\A 13: @import '4-layout/conn'\A 14: @import '4-layout/footer'\A 15: @import '4-layout/header'"; }

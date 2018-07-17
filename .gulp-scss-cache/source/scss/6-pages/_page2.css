@@ -1,17 +1,16 @@
 /*
-Error: Invalid CSS after "...nnect_error());": expected "{", was "}"
-        on line 11 of /Users/gendyblackman/Sites/blackmanimages/Myfirstsite/source/scss/4-layout/_conn.scss
+Error: Invalid CSS after "...de 'header.php'": expected "{", was "; ?>"
+        on line 1 of /Users/gendyblackman/Sites/blackmanimages/Myfirstsite/source/scss/6-pages/_page2.scss
 
-6:    // $conn = mysqli_connect("localhost", "root", "root", "bd_name");
-7:      
-8:     // Check connection
-9:    // if($conn === false){
-10:        // die("ERROR: Could not connect. " . mysqli_connect_error());
-11:     }
-12: ?>
+1: <?php include 'header.php'; ?>
+2: <?php include 'login.php'; ?>
+3: <?php include 'nav.php'; ?>
+4: 
+5: 	<div class="container">
+6: 		<div class="hero">
 
 Backtrace:
-/Users/gendyblackman/Sites/blackmanimages/Myfirstsite/source/scss/4-layout/_conn.scss:11
+/Users/gendyblackman/Sites/blackmanimages/Myfirstsite/source/scss/6-pages/_page2.scss:1
 /Users/gendyblackman/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.6/lib/sass/scss/parser.rb:1278:in `expected'
 /Users/gendyblackman/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.6/lib/sass/scss/parser.rb:1208:in `expected'
 /Users/gendyblackman/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.6/lib/sass/scss/parser.rb:1203:in `tok!'
@@ -35,4 +34,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Invalid CSS after \"...nnect_error());\": expected \"{\", was \"}\"\A         on line 11 of /Users/gendyblackman/Sites/blackmanimages/Myfirstsite/source/scss/4-layout/_conn.scss\A \A 6:    // $conn = mysqli_connect(\"localhost\", \"root\", \"root\", \"bd_name\");\A 7:      \A 8:     // Check connection\A 9:    // if($conn === false){\A 10:        // die(\"ERROR: Could not connect. \" . mysqli_connect_error());\A 11:     }\A 12: ?>"; }
+  content: "Error: Invalid CSS after \"...de 'header.php'\": expected \"{\", was \"; ?>\"\A         on line 1 of /Users/gendyblackman/Sites/blackmanimages/Myfirstsite/source/scss/6-pages/_page2.scss\A \A 1: <?php include 'header.php'; ?>\A 2: <?php include 'login.php'; ?>\A 3: <?php include 'nav.php'; ?>\A 4: \A 5: 	<div class=\"container\">\A 6: 		<div class=\"hero\">"; }

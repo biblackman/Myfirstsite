@@ -34,19 +34,18 @@ var imgDect = '/build/assets/img/';
 // --------------------------------------------
 
 // Compiles all SCSS files
-gulp.task('scss', function () {
-    return gulp.src('source/scss/**/*.scss')
+gulp.task('scss', function() {
+    gulp.src('source/scss/**/*.scss')
         .pipe(plumber())
         .pipe(scss({
-            style: 'compressed',
+            style: 'compressed'
         }))
         .pipe(rename({
             basename: 'main',
-            suffix: '.min',
-        }))
+            suffix: '.min'
+          }))
 
-        .pipe(gulp.dest('build/assets/css'))
-        .pipe(browserSync.stream());
+        .pipe(gulp.dest('build/assets/css'));
 });
 
 // Optimizing Images 
@@ -104,20 +103,5 @@ gulp.task('watch', function () {
 
 });
 
-//use default task to launch Browsersync and watch JS files
-// gulp.task(
-//     'default',
-//     gulp.series(
-//         'clean',
-//         gulp.parallel('scss', 'scripts', 'vendors', `images`, `fonts`, 'watch'), function () {
-//             console.log('Building files');
-//         }));
-
-
-gulp.task('default', ['scss', 'scripts', 'vendors', 'watch'], function () {
-    console.log('Building files');
-});
-
-// gulp.task('default', function (callback) {
-//     runSequence(['sass', 'browserSync', 'watch'], callback)
-// });
+// use default task to launch Browsersync and watch JS files
+gulp.task('default', ['scss', 'scripts', 'vendors', 'watch'], function () {});
