@@ -1,21 +1,15 @@
 /*
-Error: Invalid CSS after "...</i><span>&fnof": expected "{", was ";/5.6</span></li>"
-        on line 29 of /Users/gendyblackman/Sites/blackmanimages/Myfirstsite/source/scss/6-pages/index.scss
+Error: Invalid CSS after "		</header>": expected "{", was ""
+        on line 50 of /Users/gendyblackman/Sites/blackmanimages/Myfirstsite/source/scss/4-layout/_nav.scss
 
-24: 								Hoodie stumptown kitsch <span class="item__date">05/05/2015</span></h3>
-25: 							<div class="item__details">
-26: 								<ul>
-27: 									<li><i class="icon icon-camera"></i><span> Nikon D750 </span></li>
-28: 									<li><i class="icon icon-focal_length"></i><span>22.5mm</span></li>
-29: 									<li><i class="icon icon-aperture"></i><span>&fnof;/5.6</span></li>
-30: 									<li><i class="icon icon-exposure_time"></i><span>1/1000</span></li>
-31: 									<li><i class="icon icon-iso"></i><span>80</span></li>
-32: 								</ul>
-33: 							</div>
-34: 						</div>
+45: 						</li>
+46: 
+47: 			</ul>
+48: 			</nav>
+49: 		</header>
 
 Backtrace:
-/Users/gendyblackman/Sites/blackmanimages/Myfirstsite/source/scss/6-pages/index.scss:29
+/Users/gendyblackman/Sites/blackmanimages/Myfirstsite/source/scss/4-layout/_nav.scss:50
 /Users/gendyblackman/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/scss/parser.rb:1278:in `expected'
 /Users/gendyblackman/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/scss/parser.rb:1208:in `expected'
 /Users/gendyblackman/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/scss/parser.rb:1203:in `tok!'
@@ -39,4 +33,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Invalid CSS after \"...</i><span>&fnof\": expected \"{\", was \";/5.6</span></li>\"\A         on line 29 of /Users/gendyblackman/Sites/blackmanimages/Myfirstsite/source/scss/6-pages/index.scss\A \A 24: 								Hoodie stumptown kitsch <span class=\"item__date\">05/05/2015</span></h3>\A 25: 							<div class=\"item__details\">\A 26: 								<ul>\A 27: 									<li><i class=\"icon icon-camera\"></i><span> Nikon D750 </span></li>\A 28: 									<li><i class=\"icon icon-focal_length\"></i><span>22.5mm</span></li>\A 29: 									<li><i class=\"icon icon-aperture\"></i><span>&fnof;/5.6</span></li>\A 30: 									<li><i class=\"icon icon-exposure_time\"></i><span>1/1000</span></li>\A 31: 									<li><i class=\"icon icon-iso\"></i><span>80</span></li>\A 32: 								</ul>\A 33: 							</div>\A 34: 						</div>"; }
+  content: "Error: Invalid CSS after \"		</header>\": expected \"{\", was \"\"\A         on line 50 of /Users/gendyblackman/Sites/blackmanimages/Myfirstsite/source/scss/4-layout/_nav.scss\A \A 45: 						</li>\A 46: \A 47: 			</ul>\A 48: 			</nav>\A 49: 		</header>"; }

@@ -1,0 +1,40 @@
+/*
+Error: Invalid CSS after "@mixin box-sizing(": expected variable (e.g. $foo), was "border-box"
+        on line 2 of /Users/gendyblackman/Sites/blackmanimages/Myfirstsite/source/scss/2-helpers/_mixins.scss
+
+1: @mixin box-sizing(
+2: 	border-box
+3: 	)
+
+Backtrace:
+/Users/gendyblackman/Sites/blackmanimages/Myfirstsite/source/scss/2-helpers/_mixins.scss:2
+/Users/gendyblackman/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/scss/parser.rb:1278:in `expected'
+/Users/gendyblackman/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/script/lexer.rb:231:in `expected!'
+/Users/gendyblackman/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/script/parser.rb:731:in `assert_tok'
+/Users/gendyblackman/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/script/parser.rb:538:in `block in defn_arglist!'
+/Users/gendyblackman/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/script/parser.rb:536:in `loop'
+/Users/gendyblackman/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/script/parser.rb:536:in `defn_arglist!'
+/Users/gendyblackman/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/script/parser.rb:145:in `parse_mixin_definition_arglist'
+/Users/gendyblackman/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/scss/parser.rb:1134:in `sass_script'
+/Users/gendyblackman/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/scss/parser.rb:244:in `mixin_directive'
+/Users/gendyblackman/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/scss/parser.rb:234:in `special_directive'
+/Users/gendyblackman/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/scss/parser.rb:209:in `directive'
+/Users/gendyblackman/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/scss/parser.rb:696:in `block_child'
+/Users/gendyblackman/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/scss/parser.rb:686:in `block_contents'
+/Users/gendyblackman/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/scss/parser.rb:137:in `stylesheet'
+/Users/gendyblackman/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/scss/parser.rb:41:in `parse'
+/Users/gendyblackman/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/engine.rb:414:in `_to_tree'
+/Users/gendyblackman/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/engine.rb:389:in `_render_with_sourcemap'
+/Users/gendyblackman/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/engine.rb:307:in `render_with_sourcemap'
+/Users/gendyblackman/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/exec/sass_scss.rb:387:in `run'
+/Users/gendyblackman/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/exec/sass_scss.rb:63:in `process_result'
+/Users/gendyblackman/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/exec/base.rb:50:in `parse'
+/Users/gendyblackman/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/exec/base.rb:18:in `parse!'
+/Users/gendyblackman/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/bin/scss:13:in `<top (required)>'
+/Users/gendyblackman/.rbenv/versions/2.5.1/bin/scss:23:in `load'
+/Users/gendyblackman/.rbenv/versions/2.5.1/bin/scss:23:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid CSS after \"@mixin box-sizing(\": expected variable (e.g. $foo), was \"border-box\"\A         on line 2 of /Users/gendyblackman/Sites/blackmanimages/Myfirstsite/source/scss/2-helpers/_mixins.scss\A \A 1: @mixin box-sizing(\A 2: 	border-box\A 3: 	)"; }

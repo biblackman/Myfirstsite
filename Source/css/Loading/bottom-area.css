@@ -193,7 +193,7 @@
 	margin: 0;
 }
 
-@media screen and (max-width: 50em) {
+@include media('screen', '>=wide1') {
 	.grid__item {
 		font-size: 1.5em;
 	}
@@ -202,7 +202,7 @@
 	}
 }
 
-@media screen and (max-width: 25.5em) {
+@include media('screen', '>=phone-landscape') {
 	.grid {
 		padding: 0 2em;
 	}

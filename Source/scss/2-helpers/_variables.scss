@@ -81,4 +81,15 @@ $font_9: FontAwesome;
 $font_10: Raleway;
 $font_11: Merriweather Sans;
 
+//Breakpoints
+@import "include";
+$breakpoints: (
+	'phone-landscape': 400px,
+	'desktop' : 600px,
+	'wide' : 1200px,
+	'phone-landscape1': 35em,
+	'desktop1' : 45em,
+	'wide1' : 65em,
+);
+
 

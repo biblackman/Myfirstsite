@@ -224,7 +224,7 @@
 	height: 400px;
 }
 
-@media screen and (max-width: 600px) {
+@include media('screen', '>=desktop') {
 	.morph-button-modal.open .morph-content {
 		top: 0% !important;
 		left: 0% !important;
@@ -237,7 +237,7 @@
 	}
 }
 
-@media screen and (max-width: 400px) {
+@include media screen('screen','>=phone-landscape') {
 	.morph-button-fixed,
 	.morph-button-fixed .morph-content {
 		width: 200px;

@@ -1,20 +1,17 @@
-var gulp = require('gulp');
-var copy = require('gulp-contrib-copy');
-var concat = require('gulp-concat');
-var uglify = require('gulp-uglify');
-var browserSync = require('browser-sync').create();
-var scss = require('gulp-scss');
-var imagemin = require('gulp-imagemin');
-var plumber = require('gulp-plumber');
-var rename = require('gulp-rename');
-var cache = require('gulp-cache');
 var autoprefixer = require('gulp-autoprefixer');
+var concat = require('gulp-concat');
 var del = require('del');
-var compass = require('gulp-compass');
-var minify = require('gulp-minify');
-var express = require('express');
+var gulp = require('gulp');
 var minify = require('gulp-minify-css');
+var plumber = require('gulp-plumber');
+var sass = require('gulp-scss');
 var sourcemaps = require('gulp-sourcemaps');
+var rename = require('gulp-rename');
+var uglify = require('gulp-uglify');
+var imagemin = require('gulp-imagemin');
+var browserSync = require('browser-sync').create();
+var media = require('include-media');
+
 
 //path
 var styleSrc = 'source/scss/**/*.scss';
@@ -37,8 +34,9 @@ var imgDect = '/build/assets/img/';
 gulp.task('scss', function() {
     gulp.src('source/scss/**/*.scss')
         .pipe(plumber())
-        .pipe(scss({
-            style: 'compressed'
+        .pipe(sass({
+            style: 'compressed',
+            //includePath: [media.join(dist, 'node_modules', '_include-media.scss','dist')]
         }))
         .pipe(rename({
             basename: 'main',
@@ -69,7 +67,7 @@ gulp.task('scripts', function () {
         .pipe(plumber())
         .pipe(uglify())
         .pipe(gulp.dest('build/assets/js'))
-        .pipe(browserSync.stream());
+        
 });
 
 //Concat and Compress Vendor .js files

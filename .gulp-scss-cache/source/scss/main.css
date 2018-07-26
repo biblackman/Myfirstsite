@@ -1,36 +1,53 @@
 /*
-Error: Invalid CSS after "//2 - HELPERS": expected selector or at-rule, was "@import '2-help..."
-        on line 7 of /Users/gendyblackman/Sites/blackmanimages/Myfirstsite/source/scss/main.scss
+Error: Invalid CSS after "": expected selector, was "1 - TOOLS"
+        on line 3 of /Users/gendyblackman/Sites/blackmanimages/Myfirstsite/source/scss/main.scss
 
+1: // This is the single file output by scss. It is intended to ONLY @import other files.
 2: 
-3: // 1 - TOOLS
+3: 1 - TOOLS
 4: @import '1-tools/normalize'
 5: 
 6: //2 - HELPERS
 7: @import '2-helpers/variables'
-8: 
-9: // 3 - BASICS
-10: @import '3-basics/base'
-11: 
-12: // 4 - LAYOUT
+8: @import '2-helpers/mixins'
 
 Backtrace:
-/Users/gendyblackman/Sites/blackmanimages/Myfirstsite/source/scss/main.scss:7
-/Users/gendyblackman/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.6/lib/sass/scss/parser.rb:1278:in `expected'
-/Users/gendyblackman/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.6/lib/sass/scss/parser.rb:1208:in `expected'
-/Users/gendyblackman/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.6/lib/sass/scss/parser.rb:42:in `parse'
-/Users/gendyblackman/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.6/lib/sass/engine.rb:414:in `_to_tree'
-/Users/gendyblackman/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.6/lib/sass/engine.rb:389:in `_render_with_sourcemap'
-/Users/gendyblackman/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.6/lib/sass/engine.rb:307:in `render_with_sourcemap'
-/Users/gendyblackman/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.6/lib/sass/exec/sass_scss.rb:391:in `run'
-/Users/gendyblackman/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.6/lib/sass/exec/sass_scss.rb:63:in `process_result'
-/Users/gendyblackman/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.6/lib/sass/exec/base.rb:52:in `parse'
-/Users/gendyblackman/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.6/lib/sass/exec/base.rb:19:in `parse!'
-/Users/gendyblackman/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.6/bin/scss:13:in `<top (required)>'
+/Users/gendyblackman/Sites/blackmanimages/Myfirstsite/source/scss/main.scss:3
+/Users/gendyblackman/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/scss/parser.rb:1278:in `expected'
+/Users/gendyblackman/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/scss/parser.rb:1208:in `expected'
+/Users/gendyblackman/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/scss/parser.rb:1188:in `expr!'
+/Users/gendyblackman/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/scss/static_parser.rb:20:in `parse_selector'
+/Users/gendyblackman/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/tree/visitors/perform.rb:434:in `visit_rule'
+/Users/gendyblackman/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/gendyblackman/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+/Users/gendyblackman/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/stack.rb:79:in `block in with_base'
+/Users/gendyblackman/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/stack.rb:135:in `with_frame'
+/Users/gendyblackman/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/stack.rb:79:in `with_base'
+/Users/gendyblackman/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/tree/visitors/perform.rb:158:in `visit'
+/Users/gendyblackman/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+/Users/gendyblackman/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/tree/visitors/base.rb:52:in `map'
+/Users/gendyblackman/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+/Users/gendyblackman/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
+/Users/gendyblackman/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+/Users/gendyblackman/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
+/Users/gendyblackman/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+/Users/gendyblackman/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
+/Users/gendyblackman/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/gendyblackman/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/tree/visitors/perform.rb:157:in `visit'
+/Users/gendyblackman/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/tree/visitors/perform.rb:10:in `visit'
+/Users/gendyblackman/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/tree/root_node.rb:36:in `css_tree'
+/Users/gendyblackman/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+/Users/gendyblackman/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/engine.rb:389:in `_render_with_sourcemap'
+/Users/gendyblackman/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/engine.rb:307:in `render_with_sourcemap'
+/Users/gendyblackman/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/exec/sass_scss.rb:387:in `run'
+/Users/gendyblackman/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/exec/sass_scss.rb:63:in `process_result'
+/Users/gendyblackman/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/exec/base.rb:50:in `parse'
+/Users/gendyblackman/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/exec/base.rb:18:in `parse!'
+/Users/gendyblackman/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/bin/scss:13:in `<top (required)>'
 /Users/gendyblackman/.rbenv/versions/2.5.1/bin/scss:23:in `load'
 /Users/gendyblackman/.rbenv/versions/2.5.1/bin/scss:23:in `<main>'
 */
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Invalid CSS after \"//2 - HELPERS\": expected selector or at-rule, was \"@import '2-help...\"\A         on line 7 of /Users/gendyblackman/Sites/blackmanimages/Myfirstsite/source/scss/main.scss\A \A 2: \A 3: // 1 - TOOLS\A 4: @import '1-tools/normalize'\A 5: \A 6: //2 - HELPERS\A 7: @import '2-helpers/variables'\A 8: \A 9: // 3 - BASICS\A 10: @import '3-basics/base'\A 11: \A 12: // 4 - LAYOUT"; }
+  content: "Error: Invalid CSS after \"\": expected selector, was \"1 - TOOLS\"\A         on line 3 of /Users/gendyblackman/Sites/blackmanimages/Myfirstsite/source/scss/main.scss\A \A 1: // This is the single file output by scss. It is intended to ONLY @import other files.\A 2: \A 3: 1 - TOOLS\A 4: @import '1-tools/normalize'\A 5: \A 6: //2 - HELPERS\A 7: @import '2-helpers/variables'\A 8: @import '2-helpers/mixins'"; }

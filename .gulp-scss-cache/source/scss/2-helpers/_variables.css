@@ -1,2 +1,56 @@
-@media screen and (max-height: 35em){.stack-slider{height:60vh;-webkit-transform:translate3d(0, 40vh, 0);transform:translate3d(0, 40vh, 0)}}@media screen and (min-width: 65em){.item__details{position:absolute;top:0;margin:0 0 0 1em;z-index:1000;left:100%;width:40%}}@media screen and (max-width: 65em){.stack{width:60%}}@media screen and (max-width: 45em){.stack-title{font-size:1.75em}.menu__item{display:block;background:#4F4E4E;overflow:hidden;height:4px;width:30px;margin:3px 10px 0 0}.menu__item span{display:none}.codrops-header{padding:0.5em 0}.stack.stack-prev .stack-title::after,.stack.stack-next .stack-title::after{top:1.85em}.codrops-header h1{font-size:0.85em;padding:0.25em}}@media screen and (min-width: 65em){.item__details{position:absolute;top:0;margin:0 0 0 1em;z-index:1000;left:100%;width:40%}}@media screen and (max-width: 65em){.stack{width:60%}}@media screen and (max-width: 45em){.stack-title{font-size:1.75em}.menu__item{display:block;background:#4f4e4e;overflow:hidden;height:4px;width:30px;margin:3px 10px 0 0}.menu__item span{display:none}.codrops-header{padding:0.5em 0}.codrops-header h1{font-size:0.85em;padding:0.25em}.stack.stack-prev .stack-title::after{top:1.85em}.stack.stack-next .stack-title::after{top:1.85em}}
-/*# sourceMappingURL=_variables.css.map */
+/*
+Error: File to import not found or unreadable: include.
+        on line 85 of /Users/gendyblackman/Sites/blackmanimages/Myfirstsite/source/scss/2-helpers/_variables.scss
+
+80: $font_9: FontAwesome;
+81: $font_10: Raleway;
+82: $font_11: Merriweather Sans;
+83: 
+84: //Breakpoints
+85: @import "include";
+86: $breakpoints: (
+87: 	'phone-landscape': 400px,
+88: 	'desktop' : 600px,
+89: 	'wide' : 1200px,
+90: 	'phone-landscape1': 35em,
+
+Backtrace:
+/Users/gendyblackman/Sites/blackmanimages/Myfirstsite/source/scss/2-helpers/_variables.scss:85
+/Users/gendyblackman/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/tree/import_node.rb:67:in `rescue in import'
+/Users/gendyblackman/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/tree/import_node.rb:44:in `import'
+/Users/gendyblackman/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/tree/import_node.rb:28:in `imported_file'
+/Users/gendyblackman/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/tree/import_node.rb:37:in `css_import?'
+/Users/gendyblackman/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/tree/visitors/perform.rb:310:in `visit_import'
+/Users/gendyblackman/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/gendyblackman/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+/Users/gendyblackman/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/stack.rb:79:in `block in with_base'
+/Users/gendyblackman/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/stack.rb:135:in `with_frame'
+/Users/gendyblackman/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/stack.rb:79:in `with_base'
+/Users/gendyblackman/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/tree/visitors/perform.rb:158:in `visit'
+/Users/gendyblackman/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+/Users/gendyblackman/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/tree/visitors/base.rb:52:in `map'
+/Users/gendyblackman/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+/Users/gendyblackman/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
+/Users/gendyblackman/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+/Users/gendyblackman/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
+/Users/gendyblackman/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+/Users/gendyblackman/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
+/Users/gendyblackman/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/gendyblackman/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/tree/visitors/perform.rb:157:in `visit'
+/Users/gendyblackman/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/tree/visitors/perform.rb:10:in `visit'
+/Users/gendyblackman/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/tree/root_node.rb:36:in `css_tree'
+/Users/gendyblackman/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+/Users/gendyblackman/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/engine.rb:389:in `_render_with_sourcemap'
+/Users/gendyblackman/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/engine.rb:307:in `render_with_sourcemap'
+/Users/gendyblackman/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/exec/sass_scss.rb:387:in `run'
+/Users/gendyblackman/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/exec/sass_scss.rb:63:in `process_result'
+/Users/gendyblackman/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/exec/base.rb:50:in `parse'
+/Users/gendyblackman/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/exec/base.rb:18:in `parse!'
+/Users/gendyblackman/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/bin/scss:13:in `<top (required)>'
+/Users/gendyblackman/.rbenv/versions/2.5.1/bin/scss:23:in `load'
+/Users/gendyblackman/.rbenv/versions/2.5.1/bin/scss:23:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: File to import not found or unreadable: include.\A         on line 85 of /Users/gendyblackman/Sites/blackmanimages/Myfirstsite/source/scss/2-helpers/_variables.scss\A \A 80: $font_9: FontAwesome;\A 81: $font_10: Raleway;\A 82: $font_11: Merriweather Sans;\A 83: \A 84: //Breakpoints\A 85: @import \"include\";\A 86: $breakpoints: (\A 87: 	'phone-landscape': 400px,\A 88: 	'desktop' : 600px,\A 89: 	'wide' : 1200px,\A 90: 	'phone-landscape1': 35em,"; }
