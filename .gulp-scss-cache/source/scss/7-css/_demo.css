@@ -1,0 +1,36 @@
+/*
+Error: Invalid CSS after "@include media ": expected selector or at-rule, was "screen('screen'..."
+        on line 124 of /Users/gendyblackman/Sites/blackmanimages/Myfirstsite/source/scss/7-css/_demo.scss
+
+119: 	.joiner {
+120: 		display: block;
+121: 	}
+122: }
+123: 
+124: @include media screen('screen','>=phone-landscape') {
+125: 	.mockup-content > span:nth-last-child(2) {
+126: 		width: calc(100% - 210px);
+127: 	}
+128: }
+129: 
+
+Backtrace:
+/Users/gendyblackman/Sites/blackmanimages/Myfirstsite/source/scss/7-css/_demo.scss:124
+/Users/gendyblackman/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/scss/parser.rb:1278:in `expected'
+/Users/gendyblackman/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/scss/parser.rb:1208:in `expected'
+/Users/gendyblackman/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/scss/parser.rb:42:in `parse'
+/Users/gendyblackman/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/engine.rb:414:in `_to_tree'
+/Users/gendyblackman/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/engine.rb:389:in `_render_with_sourcemap'
+/Users/gendyblackman/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/engine.rb:307:in `render_with_sourcemap'
+/Users/gendyblackman/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/exec/sass_scss.rb:387:in `run'
+/Users/gendyblackman/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/exec/sass_scss.rb:63:in `process_result'
+/Users/gendyblackman/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/exec/base.rb:50:in `parse'
+/Users/gendyblackman/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/exec/base.rb:18:in `parse!'
+/Users/gendyblackman/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/bin/scss:13:in `<top (required)>'
+/Users/gendyblackman/.rbenv/versions/2.5.1/bin/scss:23:in `load'
+/Users/gendyblackman/.rbenv/versions/2.5.1/bin/scss:23:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid CSS after \"@include media \": expected selector or at-rule, was \"screen('screen'...\"\A         on line 124 of /Users/gendyblackman/Sites/blackmanimages/Myfirstsite/source/scss/7-css/_demo.scss\A \A 119: 	.joiner {\A 120: 		display: block;\A 121: 	}\A 122: }\A 123: \A 124: @include media screen('screen','>=phone-landscape') {\A 125: 	.mockup-content > span:nth-last-child(2) {\A 126: 		width: calc(100% - 210px);\A 127: 	}\A 128: }\A 129: "; }

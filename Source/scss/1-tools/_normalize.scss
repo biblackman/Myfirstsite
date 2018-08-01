@@ -1,15 +1,234 @@
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-main,
-nav,
-section,
-summary{ display:block;}
-audio,
-canvas,
-video{ display:inline-block;}audio:not([controls]){display:none;height:0;}[hidden]{display:none;}html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;}body{margin:0;}a:focus{outline:thin dotted;}a:active,a:hover{outline:0;}h1{font-size:2em;margin:0.67em 0;}abbr[title]{border-bottom:1px dotted; } b, strong{font-weight:bold;}dfn{font-style:italic;}hr{-moz-box-sizing:content-box;box-sizing:content-box;height:0;}mark{background:#ff0;color:#000;}code,kbd,pre,samp{font-family:monospace,serif;font-size:1em;}pre{white-space:pre-wrap;}q{quotes:"\201C" "\201D" "\2018" "\2019";}small{font-size:80%;}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline;}sup{top:-0.5em;}sub{bottom:-0.25em;}img{border:0;}svg:not(:root){overflow:hidden;}figure{margin:0;}fieldset{border:1px solid #c0c0c0;margin:0 2px;padding:0.35em 0.625em 0.75em;}legend{border:0;padding:0;}button,input,select,textarea{font-family:inherit;font-size:100%;margin:0;}button,input{line-height:normal;}button,select{text-transform:none;}button,html input[type="button"],input[type="reset"],input[type="submit"]{-webkit-appearance:button;cursor:pointer;}button[disabled],html input[disabled]{cursor:default;}input[type="checkbox"],input[type="radio"]{box-sizing:border-box;padding:0;}input[type="search"]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box;}input[type="search"]::-webkit-search-cancel-button,input[type="search"]::-webkit-search-decoration{-webkit-appearance:none;}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0;}textarea{overflow:auto;vertical-align:top;}table{border-collapse:collapse;border-spacing:0;}
+//colors
+$yellow: #ff0;
+$black: #000;
+$silver: #c0c0c0;
+
+//fonts
+$font_0: sans-serif;
+$font_1: monospace;
+$font_2: serif;
+
+//@extend-elements
+//original selectors
+//sub, sup
+%extend_1 {
+	font-size: 75%;
+	line-height: 0;
+	position: relative;
+	vertical-align: baseline;
+}
+
+//original selectors
+//button, input, select, textarea
+%extend_2 {
+	font-family: inherit;
+	font-size: 100%;
+	margin: 0;
+}
+
+
+article {
+	display: block;
+}
+aside {
+	display: block;
+}
+details {
+	display: block;
+}
+figcaption {
+	display: block;
+}
+figure {
+	display: block;
+	margin: 0;
+}
+footer {
+	display: block;
+}
+header {
+	display: block;
+}
+hgroup {
+	display: block;
+}
+main {
+	display: block;
+}
+nav {
+	display: block;
+}
+section {
+	display: block;
+}
+summary {
+	display: block;
+}
+audio {
+	display: inline-block;
+	&:not([controls]) {
+		display: none;
+		height: 0;
+	}
+}
+canvas {
+	display: inline-block;
+}
+video {
+	display: inline-block;
+}
+[hidden] {
+	display: none;
+}
+html {
+	font-family: $font_0;
+	input[type="button"] {
+		cursor: pointer;
+	}
+	input[disabled] {
+		cursor: default;
+	}
+}
+body {
+	margin: 0;
+}
+a {
+	&:focus {
+		outline: thin dotted;
+	}
+	&:active {
+		outline: 0;
+	}
+	&:hover {
+		outline: 0;
+	}
+}
+h1 {
+	font-size: 2em;
+	margin: 0.67em 0;
+}
+abbr[title] {
+	border-bottom: 1px dotted;
+}
+b {
+	font-weight: bold;
+}
+strong {
+	font-weight: bold;
+}
+dfn {
+	font-style: italic;
+}
+hr {
+	//Instead of the line below you could use @include box-sizing($bs)
+	box-sizing: content-box;
+	height: 0;
+}
+mark {
+	background: $yellow;
+	color: $black;
+}
+code {
+	font-family: $font_1, $font_2;
+	font-size: 1em;
+}
+kbd {
+	font-family: $font_1, $font_2;
+	font-size: 1em;
+}
+pre {
+	font-family: $font_1, $font_2;
+	font-size: 1em;
+	white-space: pre-wrap;
+}
+samp {
+	font-family: $font_1, $font_2;
+	font-size: 1em;
+}
+q {
+	quotes: "\201C" "\201D" "\2018" "\2019";
+}
+small {
+	font-size: 80%;
+}
+sub {
+	@extend %extend_1;
+	bottom: -0.25em;
+}
+sup {
+	@extend %extend_1;
+	top: -0.5em;
+}
+img {
+	border: 0;
+}
+fieldset {
+	border: 1px solid $silver;
+	margin: 0 2px;
+	padding: 0.35em 0.625em 0.75em;
+}
+legend {
+	border: 0;
+	padding: 0;
+}
+button {
+	@extend %extend_2;
+	line-height: normal;
+	text-transform: none;
+	cursor: pointer;
+}
+input {
+	@extend %extend_2;
+	line-height: normal;
+}
+select {
+	@extend %extend_2;
+	text-transform: none;
+}
+textarea {
+	@extend %extend_2;
+	overflow: auto;
+	vertical-align: top;
+}
+input[type="reset"] {
+	cursor: pointer;
+}
+input[type="submit"] {
+	cursor: pointer;
+}
+button[disabled] {
+	cursor: default;
+}
+input[type="checkbox"] {
+	//Instead of the line below you could use @include box-sizing($bs)
+	box-sizing: border-box;
+	padding: 0;
+}
+input[type="radio"] {
+	//Instead of the line below you could use @include box-sizing($bs)
+	box-sizing: border-box;
+	padding: 0;
+}
+input[type="search"] {
+	//Instead of the line below you could use @include box-sizing($bs)
+	box-sizing: content-box;
+}
+input[type="search"]::-webkit-search-cancel-button {
+}
+input[type="search"]::-webkit-search-decoration {
+}
+button::-moz-focus-inner {
+	border: 0;
+	padding: 0;
+}
+input::-moz-focus-inner {
+	border: 0;
+	padding: 0;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+svg:not(:root) {
+	overflow: hidden;
+}
